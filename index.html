@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>mywebsite profil</title>
+</head>
+<body>
+    <header>
+        <div class=logo-branding>
+            <div class="logo-item">
+                <img class="logo" src="/assets/img/logo.png" alt="">
+                <span style="font-weight: 600;">mazviqi</span>
+            </div>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a class="home" href="#content">Home</a> </li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#"> 
+                            <select class="selected-nav" id="dropdownbro">
+                                <option value=""><a class="services-name" href="">Services</a></option>
+                            </select>
+                        </a>
+                    </li>
+                 
+                </ul>
+            </nav>
+                
+            <button><a href="#">Contact Me</a></button>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="content">
+            <div class="personal-branding">
+                <article>
+                    <div class="boxtext">
+                        <div class="text textname-my">I ' m,</div>
+                        <div class="text textname-myname">Haidar Fiki Rabani</div>
+                    </div>
+                    <h1 class="h1-class ">Web Developer</h1>
+                    <p class="description">
+                        I am a professional programming web developer, there have been several projects that I have worked on so far as a website programming.
+                    </p>
+                <button class="btn-project"><a href="#">View Project ></a></button> 
+                </article>
+                <div>
+                    <img class="personal-img" src="/assets/img/profil.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    
+        <aside id="about">
+            <div class="name-about">
+                <h2>About Me</h2>
+            </div>
+            <div class="about">
+                <div class="about-personal">
+                    <h2 class="about-heading">Haidar Fiki Rabani</h2>
+                    <h3 class="about-heading">Web Develpoer</h3>
+                    <p class="about-description">I am a web developer programmer named Haidar Fiki Rabani aged 20 years, originally from Boyolali, Central Java, Indonesia. I am studying at the STMIK Amikom Surakarta campus, which is currently taking semester 6. I have a hobby of playing games, and I have the mind of creating an application that can be useful for all Indonesian people </p>
+                </div>
+            </div>
+        </aside>
+
+        <div id="project">
+            <div class="project">
+                <div class="header-project">
+                    <h2>My Project</h2>
+                    <p class="project-des">this is all the projects I've worked on over the past 2years </p>
+                </div>
+                <div class="cards">
+                    <div class="card-project">
+                        <h3 class="name-project">Laravel Project</h3>
+                        <p class="description-project">I once created a project using the Laravel framework</p>
+                        <center>
+                            <button class="btn_project-all" type="submit"><a href="#">view all</a> </button>
+                        </center>
+                    </div>
+
+                    <div class="card-project">
+                        <h3 class="name-project">Companny Project</h3>
+                        <p class="description-project">I once handled a project at an IT developer company</p>
+                        <center>
+                            <button class="btn_project-all" type="submit"><a href="#">view all</a> </button>
+                        </center>
+                    </div>
+
+                    <div class="card-project">
+                        <h3 class="name-project">Server Project</h3>
+                        <p class="description-project">i once built a server for one of the growing startupsk</p>
+                        <center>
+                            <button class="btn_project-all" type="submit"><a href="#">view all</a> </button>
+                        </center>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-item">
+            <h3>Mazviqi Web Profil</h3>
+            <p> Email & Contact Person, fikirbn12@gmail.com | 089527487800</p>
+            <ul class="medsos">
+                <li><a href="#">instagram</a></li>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">linkedin</a></li>
+            </ul>
+        </div>
+        <div class="footer-copy">
+            <p class="copy-right">copyright &copy 2023 | mazviqi</p>
+        </div>
+    </footer>
+   
+    <script>
+        let countries = ["Build Web", "Build App"];
+        countries.sort();
+        countries.forEach(function(item){
+            let o=document.createElement("option");
+            o.text = item;
+            o.value = item;
+            dropdownbro.appendChild(o);
+        })
+    </script>
+
+</body>
+</html>
